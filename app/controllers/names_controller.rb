@@ -14,15 +14,11 @@ class NamesController < ApplicationController
 
 	def create
 		@name = Name.new(prms)
-		if @name.valid?
-				if @name.save
-					redirect_to names_path
-				else
-						redirect_to new_name_path, :alert => "Oops, ocorreu algo inesperado!!"
-				end
-	  else
-		    redirect_to new_name_path, :alert => "Por favor informe os dados corretamente!!"
-	  end
+		if @name.save
+			redirect_to names_path
+		else
+				redirect_to new_name_path, :alert => "Por favor informe os dados corretamente!!"
+		end
 	end
 
 	def edit
