@@ -1,0 +1,8 @@
+<b><font color="red"><%= alert %></font></b>
+<%= form_for @name do |f| %>
+  <%= f.label "Nome:" %><br />
+	<%= f.text_field :name %><br /><br />
+	<%= f.label "Sobrenome:" %><br />
+	<%= f.text_field :surname %><br /><br />
+	<%= f.submit 'GRAVAR' %>
+<% end %>

@@ -1,8 +1,0 @@
-<% @nomes.each do |nome| %>
-	<p>
-		Nome/Sobrenome: <%= nome.nome %> <%= nome.sobrenome %> <br />
-		<%= link_to 'Alterar', edit_nome_path(nome) %> | <%= link_to 'Deletar', nome, method: :delete %>
-	</p>
-<% end %>
-<hr />
-<%= link_to 'Incluir Novo', new_nome_path %>

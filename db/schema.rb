@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20190920202833) do
+ActiveRecord::Schema.define(version: 20190923133923) do
 
-  create_table "nomes", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.string   "nome"
-    t.string   "sobrenome"
+  create_table "names", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name"
+    t.string   "surname"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

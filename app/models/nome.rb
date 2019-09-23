@@ -1,2 +1,0 @@
-class Nome < ApplicationRecord
-end
